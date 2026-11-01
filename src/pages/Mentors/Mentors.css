@@ -1,0 +1,64 @@
+.mentors-page { padding-bottom: 30px; }
+.directory-heading { display: flex; align-items: center; justify-content: space-between; gap: 50px; padding-block: 6px 33px; }
+.directory-heading h1 { font-size: clamp(45px, 4.6vw, 65px); font-weight: 500; letter-spacing: -.065em; line-height: 1.07; margin-bottom: 21px; }
+.directory-heading h1 > span { color: #708452; }
+.directory-heading > div > p:last-child { font-size: 12px; line-height: 1.85; color: var(--text-3); margin: 0; }
+.directory-heading .eyebrow { margin-bottom: 20px; }
+.directory-note { width: 230px; padding: 20px 22px; background: #eef0e4; border-radius: 9px; display: grid; grid-template-columns: 45px 1fr; gap: 16px 12px; position: relative; margin-right: 6px; transform: rotate(2deg); }
+.directory-note-mark { width: 45px; height: 45px; background: var(--lime); border-radius: 50%; display: grid; place-items: center; }
+.directory-note > span:nth-child(2) { font-size: 9px; line-height: 1.8; letter-spacing: .07em; align-self: center; }
+.directory-note > p { grid-column: 1 / -1; font-size: 12px; line-height: 1.7; margin: 0; color: var(--text-2); }
+.directory-note > a { position: absolute; right: 22px; bottom: 22px; }
+.directory-controls { padding-top: 13px; scroll-margin-top: 120px; }
+.directory-search-row { display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+.directory-search { display: flex; align-items: center; gap: 15px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); flex: 1; }
+.directory-search:focus-within { border-color: #759156; box-shadow: 0 0 0 3px #e4ecd7; }
+.directory-search > svg { color: var(--text-3); }
+.directory-search input { border: 0; outline: 0; background: none; min-width: 0; width: 100%; font-size: 13px; }
+.directory-search input::-webkit-search-cancel-button { display: none; }
+.directory-search button { display: grid; place-items: center; background: none; border: 0; padding: 3px; }
+.directory-free-note { display: flex; align-items: center; gap: 8px; font-size: 10px; white-space: nowrap; padding-inline: 11px 2px; }
+.directory-category-list { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-top: 22px; }
+.directory-category-list > button { padding: 10px 18px; border: 1px solid var(--line); border-radius: 25px; background: transparent; font-size: 11px; min-height: 41px; }
+.directory-category-list > button:hover { background: var(--primary-soft); }
+.directory-category-list > button.active { background: var(--text); color: var(--bg); border-color: var(--text); }
+.directory-filters { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 24px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+.filter-label { display: flex; align-items: center; gap: 8px; font-size: 10px; color: var(--text-3); margin-right: 5px; }
+.directory-filters select { max-width: 195px; font-size: 10px; padding: 9px 25px 9px 10px; border: 1px solid var(--line); background: var(--surface); border-radius: 5px; min-height: 36px; }
+.directory-available { display: inline-flex; align-items: center; gap: 7px; font-size: 10px; cursor: pointer; margin-left: 3px; }
+.directory-available input { width: 14px; height: 14px; accent-color: var(--text); }
+.directory-clear { display: flex; align-items: center; gap: 5px; padding: 5px 0; border: 0; background: none; font-size: 10px; text-decoration: underline; text-underline-offset: 3px; margin-left: auto; }
+.directory-results-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 24px 20px; }
+.directory-results-heading p { font-size: 11px; margin: 0; }
+.directory-results-heading p > span { color: var(--text-3); font-size: 10px; margin-left: 4px; }
+.directory-results-heading label { display: flex; align-items: center; font-size: 9px; color: var(--text-3); gap: 5px; }
+.directory-results-heading select { background: none; border: 0; color: var(--text); font-size: 10px; padding: 6px; }
+.directory-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 21px; }
+.directory-footnote { display: flex; align-items: center; gap: 8px; margin-top: 32px; padding-top: 21px; border-top: 1px solid var(--line); color: var(--text-3); font-size: 10px; }
+.directory-footnote strong { color: var(--text); font-weight: 500; }
+.directory-footnote small { margin-left: auto; font-size: 9px; }
+@media (max-width: 1150px) { .directory-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .directory-filters { gap: 10px; } .filter-label { display: none; } }
+@media (max-width: 900px) { .directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .directory-filters select { max-width: 160px; } }
+@media (max-width: 700px) {
+  .directory-heading { padding-block: 0 26px; gap: 18px; }
+  .directory-heading h1 { font-size: clamp(40px, 9vw, 54px); }
+  .directory-heading .eyebrow { font-size: 8px; }
+  .directory-note { display: none; }
+  .directory-heading > div > p:last-child { font-size: 11px; }
+  .directory-search { padding: 16px 14px; gap: 10px; }
+  .directory-search input { font-size: 11px; }
+  .directory-free-note { display: none; }
+  .directory-category-list { gap: 7px; flex-wrap: nowrap; overflow-x: auto; padding-block: 3px 8px; margin-top: 15px; }
+  .directory-category-list > button { flex-shrink: 0; font-size: 10px; padding-inline: 14px; min-height: 38px; }
+  .directory-filters { margin-top: 12px; gap: 8px; padding-bottom: 19px; }
+  .directory-filters select { flex: 1; min-width: 0; max-width: none; font-size: 9px; padding: 8px 3px 8px 6px; }
+  .directory-available { flex-basis: 60%; margin: 3px 0 0; font-size: 9px; }
+  .directory-clear { font-size: 9px; }
+  .directory-results-heading { padding-block: 19px; }
+  .directory-results-heading p { font-size: 10px; }
+  .directory-results-heading p > span { display: none; }
+  .directory-grid { gap: 20px; }
+  .directory-footnote { flex-wrap: wrap; font-size: 9px; gap: 6px; }
+  .directory-footnote small { margin-left: 0; flex-basis: 100%; }
+}
+@media (max-width: 550px) { .directory-grid { grid-template-columns: 1fr; } }

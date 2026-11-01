@@ -1,0 +1,176 @@
+/* One saved theme for the complete campus edition, including its public homepage. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #142019;
+  --surface: #1c2b21;
+  --surface-2: #26372a;
+  --text: #edf1e4;
+  --text-2: #c1ceba;
+  --text-3: #a3b29b;
+  --primary: #dff58b;
+  --primary-text: #dff58b;
+  --primary-hover: #ecfab6;
+  --primary-soft: #30432c;
+  --on-primary: #203c30;
+  --line: #364537;
+  --line-strong: #617457;
+  --success: #a5c782;
+  --danger: #9f4939;
+  --danger-text: #efb6a2;
+  --like: #e9b492;
+  --star-gold: #c2d990;
+  --star-empty: #45533a;
+  --shadow-card: 0 3px 16px #050d070c;
+  --shadow-raised: 0 16px 48px #050d0766;
+  --glass-bg: #142019f5;
+  --avatar-indigo: #344b31;
+  --avatar-gulabi: #583f32;
+  --avatar-mango: #534c2c;
+  --avatar-matcha: #354e38;
+  --avatar-plum: #44473a;
+  --avatar-sky: #344c44;
+  --tint-indigo-bg: #32452c;
+  --tint-indigo-fg: #c3dca2;
+  --tint-pink-bg: #503c30;
+  --tint-pink-fg: #e5b99c;
+  --tint-mango-bg: #49432a;
+  --tint-mango-fg: #dfd2a0;
+  --tint-mint-bg: #2c4533;
+  --tint-mint-fg: #b5d3aa;
+  --tint-sky-bg: #2d453b;
+  --tint-sky-fg: #b8d6c0;
+  --ub-paper: #142019;
+  --ub-ink: #edf1e4;
+  --ub-muted: #a3b29b;
+  --ub-line: #364537;
+}
+:root[data-theme='dark'] input::placeholder,
+:root[data-theme='dark'] textarea::placeholder { color: #93a18c; }
+:root[data-theme='dark'] .campus-header { background: #142019f2; }
+:root[data-theme='dark'] .campus-bottom-nav { background: #142019f5; }
+:root[data-theme='dark'] .brand-dot,
+:root[data-theme='dark'] .ub-brand-dot { color: var(--lime); }
+:root[data-theme='dark'] .status-dot,
+:root[data-theme='dark'] .nav-dot { background: #bed791; }
+:root[data-theme='dark'] .notification-count { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .account-menu > button { color: var(--danger-text); }
+:root[data-theme='dark'] .campus-bottom-nav > a.active > span { color: var(--ink); }
+:root[data-theme='dark'] .campus-bottom-nav b { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .modal-dialog { box-shadow: 0 25px 100px #030b0666; }
+:root[data-theme='dark'] .modal-dialog::backdrop { background: #050e09ba; }
+:root[data-theme='dark'] .auth-role-choice button.active { color: var(--ink); }
+:root[data-theme='dark'] .auth-error-banner { background: #462e23; border-color: #704b39; }
+:root[data-theme='dark'] .interest-chip.selected { border-color: #6a8152; }
+:root[data-theme='dark'] .toast-message { background: #dff58b; color: var(--ink); }
+:root[data-theme='dark'] .toast-message > svg { color: var(--ink); }
+
+/* Printed photographs and the lime campus pass keep their own ink colour. */
+:root[data-theme='dark'] .dashboard-photo { background: #2c3b2b; }
+:root[data-theme='dark'] .dashboard-photo-caption { color: var(--text); }
+:root[data-theme='dark'] .dashboard-photo-sticker { color: var(--ink); }
+:root[data-theme='dark'] .dashboard-pass,
+:root[data-theme='dark'] .dashboard-pass .student-avatar { color: var(--ink); }
+:root[data-theme='dark'] .dashboard-stat-icon.stat-tone-1 { background: #4a3d2b; }
+:root[data-theme='dark'] .dashboard-stat-icon.stat-tone-2 { background: #2c4533; }
+:root[data-theme='dark'] .dashboard-stats > a:hover strong { color: var(--lime); }
+:root[data-theme='dark'] .dashboard-map-card { background: var(--surface); }
+:root[data-theme='dark'] .dashboard-map-card > .campus-illustration { filter: brightness(.78) saturate(.8); }
+:root[data-theme='dark'] .dashboard-stories-card { color: var(--paper); }
+
+:root[data-theme='dark'] .directory-heading h1 > span { color: #b1ca8c; }
+:root[data-theme='dark'] .directory-note { background: var(--surface-2); }
+:root[data-theme='dark'] .directory-note-mark { color: var(--ink); }
+:root[data-theme='dark'] .directory-search:focus-within { box-shadow: 0 0 0 3px #5d794440; }
+:root[data-theme='dark'] .directory-category-list > button.active { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .senior-card-year { background: #142019df; color: var(--text); }
+:root[data-theme='dark'] .senior-card-arrow { background: #142019ed; color: var(--lime); }
+:root[data-theme='dark'] .senior-card-availability { color: var(--ink); }
+:root[data-theme='dark'] .senior-card-availability > span { background: var(--ink); }
+:root[data-theme='dark'] .senior-card-availability.is-away { color: var(--text); }
+:root[data-theme='dark'] .senior-card-availability.is-away > span { background: var(--text-3); }
+:root[data-theme='dark'] .senior-profile-photo > span:last-child:not(.mentor-monogram) { background: #142019e6; color: var(--text); }
+:root[data-theme='dark'] .connection-tabs button.active { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .connection-tabs button.active .network-count { background: #203c3020; color: var(--ink); }
+
+:root[data-theme='dark'] .chat-pane { background: #17241b; }
+:root[data-theme='dark'] .chat-placeholder { background: radial-gradient(ellipse at center, #2b3c26 0%, #17241b 75%); }
+:root[data-theme='dark'] .chat-placeholder-icon { color: var(--ink); }
+:root[data-theme='dark'] .chat-bubble { background: #293a2c; color: var(--text); border-color: #3d503b; }
+:root[data-theme='dark'] .is-own .chat-bubble { background: #dff58b; color: var(--ink); border-color: #dff58b; }
+:root[data-theme='dark'] .chat-send-btn { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .chat-send-btn:hover:not(:disabled) { background: #ecfab6; }
+
+:root[data-theme='dark'] .senior-hero { background: #203c30; color: var(--paper); }
+:root[data-theme='dark'] .senior-hero .btn-primary { color: var(--ink); }
+:root[data-theme='dark'] .senior-profile-nudge { background: #263829; }
+:root[data-theme='dark'] .senior-tip { background: #383224; }
+:root[data-theme='dark'] .profile-preview { background: #263829; }
+:root[data-theme='dark'] .profile-switch.active { background: var(--lime); }
+:root[data-theme='dark'] .profile-switch.active > span { background: var(--ink); }
+
+:root[data-theme='dark'] .cat-pill.active { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .place-card.selected { background: #2b3d2b; border-color: #7f995c; box-shadow: 0 0 0 2px #7b945c33; }
+:root[data-theme='dark'] .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) saturate(.45) brightness(.8) contrast(.9); }
+:root[data-theme='dark'] .college-pin-center { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .place-pin-marker { border-color: #e6eeda; box-shadow: 0 3px 8px #07120955; }
+:root[data-theme='dark'] .college-tooltip { background: #22372b; color: var(--text); }
+
+/* The original swipe deck keeps the same geometry and controls in both themes. */
+:root[data-theme='dark'] .stories-page .story-card-inner { box-shadow: 0 20px 50px #030a075c; border-color: #8ca07640; }
+:root[data-theme='dark'] .stories-page .glow-stories-indigo { background: #577f45; opacity: .13; }
+:root[data-theme='dark'] .stories-page .glow-stories-pink { background: #dff58b; opacity: .06; }
+:root[data-theme='dark'] .stories-page .story-create-btn { background: var(--lime); color: var(--ink); border-color: var(--bg); outline-color: var(--line-strong); box-shadow: 0 6px 24px #07120966; }
+:root[data-theme='dark'] .stories-page .story-create-btn:hover:not(:disabled) { background: #ecfab6; outline-color: var(--lime); }
+:root[data-theme='dark'] .stories-page .nav-arrow-btn { background: var(--surface-2); color: var(--text); border-color: var(--line-strong); }
+:root[data-theme='dark'] .stories-page .nav-arrow-btn:hover { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+:root[data-theme='dark'] .stories-page .stories-empty-state { background: var(--surface); border-color: var(--line); }
+:root[data-theme='dark'] .stories-page .stories-empty-icon-circle { background: var(--primary-soft); border-color: var(--line-strong); }
+:root[data-theme='dark'] .stories-page .stories-empty-title { color: var(--text); }
+:root[data-theme='dark'] .stories-page .stories-empty-text { color: var(--text-2); }
+:root[data-theme='dark'] .stories-page .sheet-dialog { background: #1c2b21f5; }
+:root[data-theme='dark'] .stories-page :is(.comment-author, .share-title, .sheet-title) { color: var(--text); }
+:root[data-theme='dark'] .stories-page :is(.comment-input, .share-icon-circle) { background: var(--surface-2); }
+:root[data-theme='dark'] .stories-page .comment-avatar { background: var(--primary-soft); color: var(--lime); }
+:root[data-theme='dark'] .stories-page .comment-send-btn { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .story-composer-preview { background: #25382a; }
+
+/* The public experiment uses the same saved preference as the signed-in app. */
+:root[data-theme='dark'] .ub-experiment {
+  --ub-paper: #142019;
+  --ub-ink: #edf1e4;
+  --ub-muted: #a3b29b;
+  --ub-line: #364537;
+}
+:root[data-theme='dark'] .ub-header { background: #142019f2; }
+:root[data-theme='dark'] .ub-experiment .ub-btn-dark,
+:root[data-theme='dark'] .ub-mentor-modal .ub-btn-dark { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .ub-experiment .ub-btn-dark:hover { background: #ecfab6; }
+:root[data-theme='dark'] .ub-experiment .ub-hero-description,
+:root[data-theme='dark'] .ub-experiment .ub-hero-note { color: var(--text-2); }
+:root[data-theme='dark'] .ub-scene { background: #26372a; border-color: var(--line); }
+:root[data-theme='dark'] .ub-scene-coordinate,
+:root[data-theme='dark'] .ub-scene-footnote { color: #bdcaae; }
+:root[data-theme='dark'] .ub-photo-print { background: #faf9f5; color: #203c30; }
+:root[data-theme='dark'] .ub-photo-caption,
+:root[data-theme='dark'] .ub-pocket-pass,
+:root[data-theme='dark'] .ub-good-company { color: #203c30; }
+:root[data-theme='dark'] .ub-campus-strip { background: #19271d; border-color: var(--line); }
+:root[data-theme='dark'] .ub-college-names { color: #c7d3ba; }
+:root[data-theme='dark'] .ub-mentor-filters button.is-active { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+:root[data-theme='dark'] .ub-mentor-arrow { background: #142019ed; color: var(--lime); }
+:root[data-theme='dark'] .ub-mentor-focus { background: #142019e6; color: var(--text); }
+:root[data-theme='dark'] .ub-monogram { background: #344b31; color: #c1d8a0; }
+:root[data-theme='dark'] .ub-mentor-tone-1 .ub-monogram { background: #533e2d; color: #e8c3a5; }
+:root[data-theme='dark'] .ub-mentor-tone-2 .ub-monogram { background: #30483c; color: #bad3bd; }
+:root[data-theme='dark'] .ub-mentor-tone-3 .ub-monogram { background: #4a472b; color: #d9d6a5; }
+:root[data-theme='dark'] .ub-campus-panel { background: #203c30; color: var(--paper); }
+:root[data-theme='dark'] .ub-experiment .ub-light-link { color: var(--paper); }
+:root[data-theme='dark'] .ub-campus-tabs button.is-active { background: var(--lime); color: var(--ink); }
+:root[data-theme='dark'] .ub-map-preview { --ub-paper: #faf9f5; --ub-ink: #203c30; --ub-muted: #667164; color: #203c30; }
+:root[data-theme='dark'] .ub-story-preview { --ub-paper: #faf9f5; --ub-ink: #203c30; }
+:root[data-theme='dark'] .ub-closing { color: var(--ink); }
+:root[data-theme='dark'] .ub-experiment .ub-closing .ub-btn-dark { background: var(--ink); color: var(--paper); }
+:root[data-theme='dark'] .ub-experiment .ub-closing .ub-btn-dark:hover { background: #345840; }
+:root[data-theme='dark'] .ub-closing .ub-eyebrow { color: var(--ink); }
+:root[data-theme='dark'] .ub-profile-tags > span { background: var(--primary-soft); color: var(--text); }
+:root[data-theme='dark'] .ub-profile-preview blockquote { background: var(--surface-2); border-color: var(--line-strong); }

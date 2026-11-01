@@ -1,0 +1,51 @@
+/* The original Instants layout and interactions live in Stories.jsx / Stories.css.
+   This file changes their palette and typography only. */
+.stories-page {
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --like: #f1c9aa;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+.stories-page .glow-stories-indigo { background: #9aaf7b; opacity: .12; }
+.stories-page .glow-stories-pink { background: #dff58b; opacity: .14; }
+.stories-page .story-card-inner { background: #203c30; border-color: #203c3033; box-shadow: 0 20px 50px #203c3033; }
+.stories-page .story-media-layer { background: #203c30; }
+.stories-page .story-bottom-scrim { background: linear-gradient(180deg, transparent 0%, #183426cc 40%, #183426fa 100%); }
+.stories-page .story-author-name, .stories-page .story-caption-text { color: #faf9f5; }
+.stories-page .story-college-year { color: #dff58b; }
+.stories-page .story-author-avatar { color: #203c30; background: #dff58b !important; border-color: #faf9f599; }
+.stories-page .story-type-tag, .stories-page .story-mute-btn { background: #203c30a6; color: #faf9f5; border-color: #faf9f54d; }
+.stories-page .story-mute-btn:hover { background: #203c30e6; }
+.stories-page .story-progress-fill, .stories-page .segment.filled { background: #dff58b; }
+.stories-page .segment.active { background: #dff58bda; }
+.stories-page .story-progress-track, .stories-page .segment { background: #faf9f54d; }
+.stories-page .segment.filled { background: #dff58b; }
+.stories-page .segment.active { background: #dff58bda; }
+.stories-page .skip-pill { background: #f1c9aade; border-color: #f1c9aa; color: #203c30; }
+.stories-page .next-pill { background: #dff58bde; border-color: #dff58b; color: #203c30; }
+.stories-page .swipe-indicator-pill { box-shadow: 0 4px 20px #203c3033; }
+.stories-page .heart-pop-burst { filter: drop-shadow(0 0 24px #f1c9aa99); }
+.stories-page .action-rail-btn { background: #203c3099; border-color: #faf9f54d; color: #faf9f5; }
+.stories-page .action-rail-btn:hover { background: #203c30d9; }
+.stories-page .action-rail-btn.liked { border-color: #f1c9aa99; background: #f1c9aa33; }
+.stories-page .action-count { color: #faf9f5; text-shadow: 0 1px 4px #102a1dcc; }
+.stories-page .story-create-btn { background: #203c30; color: #dff58b; border-color: #faf9f5; outline-color: #b1baa5; box-shadow: 0 6px 24px #203c3020; }
+.stories-page .story-create-btn:hover:not(:disabled) { background: #345840; outline-color: #203c30; }
+.stories-page .nav-arrow-btn { background: #e6edd9; border-color: #b1baa5; color: #203c30; box-shadow: 0 3px 10px #203c300c; }
+.stories-page .nav-arrow-btn:hover { background: #203c30; border-color: #203c30; color: #dff58b; }
+.stories-page .nav-arrow-btn:focus-visible { outline: 2px solid #638448; outline-offset: 3px; }
+.stories-page .stories-hint-deck { color: var(--text-3); }
+.stories-page .stories-empty-state { background: #fffefb; border-color: var(--line); box-shadow: 0 20px 48px #203c3014; }
+.stories-page .stories-empty-icon-circle { background: #e6edd9; border-color: #b1baa5; }
+.stories-page .stories-empty-title { color: #203c30; }
+.stories-page .stories-empty-text { color: var(--text-2); }
+.stories-page .sheet-backdrop { background: #152b2099; }
+.stories-page .sheet-dialog { background: #faf9f5f5; }
+.stories-page .comment-avatar { background: #e6edd9; color: #203c30; }
+.stories-page .comment-input, .stories-page .share-icon-circle { background: #f0f1e8; }
+.stories-page .comment-send-btn { background: #203c30; color: #dff58b; }
+.stories-page .comment-author, .stories-page .share-title, .stories-page .sheet-title { color: #203c30; }
+.stories-page .share-sub, .stories-page .comment-text { color: var(--text-2); }
+.story-composer-preview { background: #e6edd9; }

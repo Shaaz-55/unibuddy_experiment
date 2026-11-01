@@ -1,0 +1,202 @@
+/* Shared campus language for the directory, circle, inbox and mentor workspace. */
+.campus-app .network-page { padding-top: 0; padding-bottom: 30px; }
+.campus-app .network-page-header { align-items: flex-start; gap: 28px; margin-bottom: 35px; }
+.campus-app .network-page-header h1 { font-size: clamp(32px, 3.4vw, 47px); font-weight: 500; letter-spacing: -.05em; line-height: 1.15; margin-bottom: 15px; max-width: 800px; }
+.campus-app .network-page-header > div > p { font-size: 12px; color: var(--text-3); }
+.campus-app .network-eyebrow { letter-spacing: .13em; font-size: 9px; font-weight: 600; gap: 9px; margin-bottom: 19px; }
+.campus-app .network-page-header > .network-secondary-btn { margin-top: 36px; }
+.campus-app .network-panel { border-radius: 12px; background: var(--surface); box-shadow: none; }
+.campus-app .network-section-heading h2 { font-size: 23px; font-weight: 550; }
+.campus-app .network-section-heading p { font-size: 11px; }
+.campus-app .network-btn, .campus-app .network-secondary-btn { min-height: 40px; border-radius: 7px; font-size: 11px; }
+.campus-app .network-icon-btn { width: 38px; height: 38px; }
+.campus-app .network-count { border-radius: 50%; font-size: 9px; background: var(--primary-soft); }
+.campus-app .network-search { border-radius: 8px; background: var(--surface); min-height: 46px; }
+.campus-app .network-search input { font-family: var(--font-body); }
+.student-avatar.student-avatar { background: var(--primary-soft); color: var(--text); border-radius: 50%; letter-spacing: -.04em; font-weight: 550; overflow: hidden; }
+.student-avatar.student-avatar > img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; }
+.student-avatar.avatar-large { border-radius: 50%; }
+.campus-app .skill-tag { border-radius: 5px; font-weight: 500; font-size: 10px; padding: 4px 8px; }
+.campus-app .student-role { border-radius: 5px; font-size: 9px; letter-spacing: .03em; }
+.campus-app .network-empty { padding-block: 65px; }
+.campus-app .network-empty > svg { padding: 12px; box-sizing: content-box; background: var(--primary-soft); border-radius: 50%; width: 26px; height: 26px; }
+.campus-app .network-empty h3 { font-size: 24px; font-weight: 500; }
+.campus-app .network-empty p { font-size: 12px; max-width: 370px; }
+.campus-app .connection-tabs { background: transparent; padding: 0; border: 0; border-radius: 0; gap: 7px; }
+.campus-app .connection-tabs button { border-radius: 30px; border: 1px solid var(--line); padding: 10px 18px; font-size: 11px; font-weight: 500; min-height: 41px; }
+.campus-app .connection-tabs button.active { background: var(--text); color: var(--bg); border-color: var(--text); box-shadow: none; }
+.campus-app .connection-tabs button.active .network-count { background: var(--lime); color: var(--text); }
+.campus-app .connections-explainer { background: var(--primary-soft); border-radius: 8px; padding: 13px 16px; margin-bottom: 27px; }
+.campus-app .connections-explainer p { color: var(--text-2); font-size: 11px; }
+.campus-app .student-card { padding: 27px; }
+.campus-app .student-card-top { margin-bottom: 24px; }
+.campus-app .student-name-button h2 { font-size: 26px; font-weight: 550; }
+.campus-app .student-bio { font-size: 12px; line-height: 1.9; }
+.campus-app .messages-page-heading h1 { font-size: 46px; font-weight: 500; letter-spacing: -.05em; }
+.campus-app .messages-page-heading .network-eyebrow { margin-bottom: 13px; }
+.campus-app .messenger { border-radius: 12px; height: calc(100dvh - 277px); min-height: 550px; max-height: 850px; background: var(--surface); box-shadow: none; grid-template-columns: 305px minmax(0, 1fr); }
+.campus-app .inbox-heading h2 { font-size: 19px; font-weight: 550; }
+.campus-app .chat-pane { background: #f3f4ec; }
+.campus-app .chat-header { background: var(--surface); }
+.campus-app .inbox-conversation { border-radius: 8px; }
+.campus-app .inbox-conversation.active { background: var(--primary-soft); }
+.campus-app .chat-placeholder { background: radial-gradient(ellipse at center, #e9eddc 0%, #f3f4ec 70%); }
+.campus-app .chat-placeholder-icon { background: var(--lime); color: var(--text); width: 80px; height: 80px; border-radius: 50%; box-shadow: none; }
+.campus-app .chat-placeholder h2 { max-width: 370px; font-size: 38px; font-weight: 500; line-height: 1.15; letter-spacing: -.055em; }
+.campus-app .chat-placeholder p { font-size: 12px; }
+.campus-app .chat-placeholder .network-eyebrow { font-size: 8px; margin-bottom: 16px; }
+.campus-app .chat-placeholder-note { font-size: 10px; }
+.campus-app .chat-bubble { background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 0 13px 13px 13px; box-shadow: none; font-size: 12px; line-height: 1.85; }
+.campus-app .is-own .chat-bubble { background: var(--text); color: var(--bg); border-color: var(--text); border-radius: 13px 0 13px 13px; }
+.campus-app .chat-introduction .student-avatar { border: 3px solid var(--bg); box-shadow: 0 0 0 1px var(--line); }
+.campus-app .chat-introduction > span:last-child { background: var(--primary-soft); color: var(--text-2); }
+.campus-app .chat-composer-area { background: var(--surface); }
+.campus-app .chat-composer { border-radius: 8px; background: var(--bg); }
+.campus-app .chat-send-btn { background: var(--text); color: var(--lime); border-radius: 7px; }
+.campus-app .chat-send-btn:hover:not(:disabled) { background: var(--primary-hover); }
+.campus-app .chat-date > span { background: var(--bg); border: 1px solid var(--line); font-size: 9px; }
+.campus-app .chat-connected { color: var(--text-2); }
+.campus-app .chat-placeholder .network-btn { border-radius: 8px; }
+.campus-app .availability-toggle { margin-top: 37px; font-size: 10px; padding: 10px 12px; border-radius: 30px; }
+.campus-app .senior-hero { background: var(--text); border-radius: 13px; color: var(--bg); border: 0; }
+.campus-app .senior-hero-copy { padding: 38px; }
+.campus-app .senior-hero-tag { color: #c8d3b9; letter-spacing: .16em; font-size: 9px; }
+.campus-app .senior-hero h2 { font-weight: 500; font-size: clamp(36px, 3.5vw, 49px); letter-spacing: -.055em; }
+.campus-app .senior-hero .gradient-text { color: var(--lime); background: none; -webkit-text-fill-color: currentColor; }
+.campus-app .senior-hero-copy > p { color: #c9d2c0; font-size: 12px; line-height: 1.9; }
+.campus-app .senior-hero .btn-primary { background: var(--lime); color: var(--text); }
+.campus-app .senior-hero-foot { color: #c9d2c0; }
+.campus-app .mentor-orbit { border-color: #66816a; }
+.campus-app .orbit-line { background: #55745b; }
+.campus-app .orbit-center .student-avatar { box-shadow: 0 0 0 11px #ffffff0c; }
+.campus-app .orbit-center > span:last-child { color: var(--lime); }
+.campus-app .orbit-student > span:last-child { color: var(--text); background: var(--bg); border: 0; border-radius: 5px; }
+.campus-app .orbit-student .student-avatar { border-color: #69846b; }
+.campus-app .orbit-sticker { background: var(--apricot); color: var(--text); border-radius: 6px; font-weight: 500; }
+.campus-app .senior-stats { gap: 18px; margin-block: 25px 30px; }
+.campus-app .senior-stat-card { border-radius: 10px; box-shadow: none; }
+.campus-app .senior-stat-card strong { font-weight: 500; font-size: 31px; }
+.campus-app .senior-stat-icon { border-radius: 50%; }
+.campus-app .senior-profile-nudge { background: #eef0e4; }
+.campus-app .senior-tip { background: #f0e4d5; border-radius: 12px; padding: 28px; }
+.campus-app .senior-tip h3 { font-size: 34px; font-weight: 500; letter-spacing: -.05em; }
+.campus-app .senior-tip .network-eyebrow { font-size: 8px; }
+.campus-app .senior-profile-page .profile-back-link { margin-bottom: 23px; }
+.campus-app .mentor-profile-form { border-radius: 12px; }
+.campus-app .profile-preview { background: #edf0e2; border-radius: 12px; }
+.campus-app .profile-preview h2 { font-size: 30px; font-weight: 550; }
+.campus-app .profile-preview blockquote { color: var(--text-2); font-size: 13px; }
+.campus-app .profile-skill-options button { border-radius: 6px; font-size: 10px; }
+.campus-app .profile-skill-options button.selected { background: var(--primary-soft); border-color: var(--line-strong); }
+.campus-app .profile-preview-col { top: 112px; }
+.campus-app .profile-switch.active { background: var(--text); }
+.campus-app .profile-switch.active > span { background: var(--lime); }
+.campus-app .profile-availability { border-radius: 8px; background: var(--surface-2); }
+.campus-app .network-section-heading .network-text-link { font-size: 10px; }
+.campus-app.is-stories .campus-context, .campus-app.is-stories .campus-footer { display: none; }
+.campus-app.is-stories .campus-main { min-height: 0; padding-top: 24px; }
+.campus-app .senior-dashboard-grid { grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr); }
+.campus-app .senior-dashboard-grid > * { min-width: 0; }
+.profile-save-status { display: flex; align-items: center; gap: 7px; color: var(--success); font-size: 11px; margin: 15px 0 0; }
+.map-page-heading { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-bottom: 30px; }
+.map-page-heading .eyebrow { font-size: 9px; margin-bottom: 17px; }
+.map-page-heading h1 { font-size: clamp(34px, 3.4vw, 48px); font-weight: 500; letter-spacing: -.055em; margin-bottom: 14px; }
+.map-page-heading > div > p:last-child { font-size: 12px; color: var(--text-3); margin: 0; }
+.map-campus-link { display: flex; align-items: center; gap: 10px; background: var(--primary-soft); padding: 14px 17px; border-radius: 7px; flex-shrink: 0; }
+.map-campus-link > span { font-size: 11px; }
+.map-campus-link small { display: block; color: var(--text-3); font-size: 8px; margin-top: 3px; }
+.campus-app .campus-map-page { height: max(580px, calc(100svh - 295px)); max-height: 840px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.campus-app .places-sidebar { width: 365px; background: var(--surface); }
+.campus-app .sidebar-header { padding: 25px 21px 15px; }
+.campus-app .sidebar-title { font-size: 25px; font-weight: 500; letter-spacing: -.05em; }
+.campus-app .sidebar-caption { font-size: 10px; color: var(--text-3); }
+.campus-app .category-filter-bar { gap: 5px; padding-block: 15px 5px; }
+.campus-app .cat-pill { background: var(--bg); border-color: var(--line); font-size: 9px; padding: 8px 10px; border-radius: 24px; gap: 4px; }
+.campus-app .cat-pill.active { color: var(--bg); background: var(--text); border-color: var(--text); }
+.campus-app .sidebar-sort-row { margin-top: 16px; }
+.campus-app .sort-btn { font-size: 9px; padding: 6px 8px; }
+.campus-app .sort-btn.active { background: var(--primary-soft); color: var(--text); }
+.campus-app .places-list { padding: 3px 16px 17px; gap: 11px; }
+.campus-app .place-card { border-radius: 8px; padding: 16px; gap: 11px; background: var(--surface); border-color: var(--line); box-shadow: none; }
+.campus-app .place-card.selected { border-color: #889c70; box-shadow: 0 0 0 2px #e4ead8; background: #f5f6ed; }
+.campus-app .place-name { font-size: 13px; letter-spacing: -.02em; line-height: 1.4; }
+.campus-app .place-walk-time { font-size: 8px; gap: 4px; }
+.campus-app .place-desc { font-size: 10px; line-height: 1.8; }
+.campus-app .place-meta-row { flex-wrap: wrap; gap: 9px; }
+.campus-app .place-tags { gap: 4px; }
+.campus-app .place-tag-pill { font-size: 8px; padding: 3px 5px; background: var(--surface-2); }
+.campus-app .expand-hint { font-size: 9px; padding-top: 10px; margin-top: 2px; }
+.campus-app .leaflet-tile-pane { filter: saturate(.55) sepia(.17) brightness(1.035) contrast(.95); }
+.campus-app .place-pin-marker { border: 2px solid #faf9f5; box-shadow: 0 3px 8px #203c3020; }
+.campus-app .college-pin-center { background: var(--text); color: var(--lime); border-color: var(--bg); }
+.campus-app .college-pin-pulse { background: #dff58b60; }
+.campus-app .college-tooltip { background: var(--bg); color: var(--text); border-color: var(--line); box-shadow: var(--shadow-card); font-size: 9px; }
+.campus-app .review-bubble-text { font-size: 10px; line-height: 1.8; }
+.campus-app .reviewer-tag { font-size: 9px; }
+.campus-app .expanded-header { font-size: 8px; }
+.map-sample-note { display: flex; align-items: flex-start; gap: 7px; font-size: 9px; color: var(--text-3); margin: 16px 0 20px; line-height: 1.8; }
+@media (max-width: 1050px) {
+  .campus-app .network-page-header { flex-wrap: wrap; }
+  .campus-app .availability-toggle { margin-top: 0; }
+}
+@media (max-width: 820px) {
+  .campus-app .messenger { grid-template-columns: 270px minmax(0, 1fr); }
+  .campus-app .senior-hero-copy { padding: 28px; }
+  .campus-app .campus-map-page { flex-direction: column; height: auto; max-height: none; }
+  .campus-app .map-view-column { height: 400px; flex: none; min-height: 360px; }
+  .campus-app .places-sidebar { width: 100%; height: auto; }
+  .campus-app .places-list { max-height: none; }
+  .map-page-heading { align-items: flex-start; }
+  .map-campus-link { display: none; }
+}
+@media (max-width: 700px) {
+  .campus-app .network-page-header h1 { font-size: 36px; line-height: 1.14; }
+  .campus-app .network-page-header { gap: 18px; margin-bottom: 25px; }
+  .campus-app .network-eyebrow { font-size: 8px; margin-bottom: 16px; }
+  .campus-app .network-page-header > .network-secondary-btn { margin-top: 0; }
+  .campus-app .connection-tabs { gap: 6px; }
+  .campus-app .connection-tabs button { padding-inline: 13px; font-size: 10px; }
+  .campus-app .network-section-heading h2 { font-size: 22px; }
+  .campus-app .student-card { padding: 23px; }
+  .campus-app .messages-page-heading h1 { font-size: 36px; }
+  .campus-app .messages-page-heading { margin-bottom: 20px; }
+  .campus-app .messenger { display: flex; min-height: 400px; height: calc(100dvh - 285px); max-height: none; border-radius: 11px; }
+  .campus-app .inbox-sidebar { width: 100%; border-right: 0; }
+  .campus-app .chat-pane { display: none; width: 100%; }
+  .campus-app .has-open-thread .inbox-sidebar { display: none; }
+  .campus-app .has-open-thread .chat-pane { display: flex; }
+  .campus-app .chat-back { display: inline-flex; }
+  .campus-app .chat-connected { display: none; }
+  .campus-app .chat-header { padding: 15px 12px; gap: 8px; }
+  .campus-app .chat-person span { max-width: 140px; }
+  .campus-app .chat-thread { padding: 17px 12px; }
+  .campus-app .chat-introduction { margin-bottom: 20px; padding-top: 8px; }
+  .campus-app .chat-message-content { max-width: 87%; }
+  .campus-app .chat-placeholder h2 { font-size: 31px; }
+  .campus-app .chat-composer-area { padding: 12px; }
+  .campus-app .composer-help { display: none; }
+  .campus-app.is-messages .campus-footer { display: none; }
+  .campus-app .senior-hero-copy { padding: 28px; }
+  .campus-app .senior-hero h2 { font-size: 37px; }
+  .campus-app .senior-hero-art { min-height: 290px; }
+  .campus-app .senior-stats { gap: 9px; }
+  .campus-app .senior-stat-card { padding: 16px 12px; }
+  .campus-app .senior-stat-card strong { font-size: 28px; }
+  .campus-app .senior-stat-card div > span { font-size: 9px; }
+  .campus-app .senior-stat-icon { width: 34px; height: 34px; }
+  .campus-app .senior-tip { padding: 26px; }
+  .campus-app .senior-dashboard-grid { grid-template-columns: minmax(0, 1fr); }
+  .campus-app .senior-request-row { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 11px; }
+  .campus-app .senior-request-row .connection-actions, .campus-app .senior-request-row > .network-btn { grid-column: 2; justify-self: start; margin-left: 0; }
+  .campus-app .senior-requests .network-section-heading, .campus-app .senior-conversations .network-section-heading { flex-wrap: wrap; gap: 12px; }
+  .campus-app .connections-explainer { margin-bottom: 23px; }
+  .campus-app .connection-controls { gap: 13px; }
+  .map-page-heading h1 { font-size: 36px; }
+  .map-page-heading > div > p:last-child { font-size: 11px; }
+  .map-page-heading .eyebrow { font-size: 8px; }
+  .campus-app .map-view-column { height: 365px; min-height: 320px; }
+  .campus-app .places-list { padding: 0 14px 17px; }
+  .campus-app .category-filter-bar { gap: 7px; }
+  .campus-app .cat-pill { padding: 8px 12px; font-size: 10px; }
+  .map-sample-note { font-size: 8px; }
+}
