@@ -146,8 +146,10 @@ body.ub-experiment-active {
 .ub-campus-strip-inner { display: flex; align-items: center; min-height: 114px; gap: 68px; }
 .ub-campus-strip p { margin: 0; color: var(--ub-muted); font-size: 10px; line-height: 1.8; flex-shrink: 0; }
 .ub-campus-strip p strong { font-weight: 500; }
-.ub-college-names { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex: 1; opacity: 0.74; }
-.ub-college-names > span { display: flex; align-items: center; white-space: nowrap; font-size: 25px; font-weight: 700; letter-spacing: -1.2px; line-height: 1; }
+.ub-college-marquee { flex: 1; min-width: 0; overflow: hidden; }
+.ub-college-track { display: flex; width: 100%; }
+.ub-college-names { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex: 0 0 100%; width: max-content; min-width: max-content; padding-right: 30px; opacity: 0.74; animation: ub-college-scroll 32s linear infinite; will-change: transform; }
+.ub-college-names > span { display: flex; align-items: center; flex-shrink: 0; white-space: nowrap; font-size: 25px; font-weight: 700; letter-spacing: -1.2px; line-height: 1; }
 .ub-college-names small { font-size: 12px; font-weight: 500; letter-spacing: -0.2px; margin-left: 6px; }
 .ub-college-names .ub-college-bits, .ub-college-names .ub-college-vit, .ub-college-names .ub-college-newton { display: grid; gap: 4px; }
 .ub-college-bits small, .ub-college-vit small { margin-left: 1px; font-size: 7px; letter-spacing: 3px; }
@@ -254,8 +256,11 @@ body.ub-experiment-active {
 .ub-step h3 { font-size: 21px; font-weight: 600; letter-spacing: -0.75px; margin: 0 0 12px; }
 .ub-step > p { color: var(--ub-muted); font-size: 12px; line-height: 1.85; max-width: 295px; margin: 0; }
 .ub-faq { width: min(700px, 100%); margin: 68px auto 0; }
+.ub-faq-heading { margin-bottom: 28px; }
+.ub-faq-heading h2 { margin: 0 0 16px; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.6px; }
+.ub-faq-heading p { max-width: 560px; margin: 0; color: var(--ub-muted); font-size: 12px; line-height: 1.85; }
 .ub-faq details { border-bottom: 1px solid var(--ub-line); }
-.ub-faq details:first-child { border-top: 1px solid var(--ub-line); }
+.ub-faq details:first-of-type { border-top: 1px solid var(--ub-line); }
 .ub-faq summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; font-size: 12px; font-weight: 600; cursor: pointer; }
 .ub-faq summary::-webkit-details-marker { display: none; }
 .ub-faq-plus { width: 15px; height: 15px; position: relative; flex-shrink: 0; }
@@ -306,6 +311,11 @@ body.ub-experiment-active .modal-title { font-weight: 600; }
 body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); }
 
 @keyframes ub-content-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes ub-college-scroll { from { transform: translateX(0); } to { transform: translateX(-100%); } }
+
+@media (hover: hover) {
+  .ub-college-marquee:hover .ub-college-names { animation-play-state: paused; }
+}
 
 @media (min-width: 1600px) {
   .ub-hero { padding-top: 64px; gap: 0 75px; }
@@ -335,7 +345,7 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
   .ub-pass-bottom { left: 18px; right: 18px; bottom: 13px; font-size: 5px; }
   .ub-good-company { width: 83px; height: 83px; font-size: 7px; }
   .ub-sticker-smile { font-size: 36px; }
-  .ub-college-names { gap: 23px; }
+  .ub-college-names { gap: 23px; padding-right: 23px; }
   .ub-campus-strip-inner { gap: 38px; }
   .ub-seniors { padding-top: 95px; }
   .ub-mentor-grid { gap: 19px; }
@@ -419,8 +429,7 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
   .ub-login-link { display: none; }
   .ub-nav-join { padding: 10px 14px; min-height: 40px; font-size: 10px; gap: 10px; }
   .ub-nav-join > svg { width: 14px; }
-  .ub-menu-toggle { width: 36px; }
-  .ub-mobile-nav { padding-inline: 20px; }
+  .ub-menu-toggle, .ub-mobile-nav { display: none; }
   .ub-hero { grid-template-columns: 1fr; gap: 28px; padding-top: 39px; }
   .ub-hero-copy { padding: 0 4px; }
   .ub-hero-copy .ub-eyebrow { margin-bottom: 25px; font-size: 8px; letter-spacing: 1.4px; }
@@ -453,7 +462,8 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
   .ub-campus-strip-inner p { font-size: 10px; }
   .ub-campus-strip-inner p br { display: none; }
   .ub-campus-strip-inner p strong { margin-left: 4px; }
-  .ub-college-names { width: 100%; flex-wrap: wrap; gap: 20px 23px; justify-content: flex-start; }
+  .ub-college-marquee { width: 100%; }
+  .ub-college-names { gap: 23px; justify-content: flex-start; }
   .ub-college-names > span { font-size: 20px; }
   .ub-college-names small { font-size: 9px; }
   .ub-college-names .ub-college-bits small, .ub-college-names .ub-college-vit small { font-size: 5px; }
@@ -549,7 +559,7 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
   .ub-pass-bottom { left: 13px; right: 13px; font-size: 3px; bottom: 9px; }
   .ub-good-company { width: 64px; height: 64px; font-size: 5px; }
   .ub-sticker-smile { font-size: 29px; margin-bottom: 7px; }
-  .ub-college-names { gap: 19px; }
+  .ub-college-names { gap: 19px; padding-right: 19px; }
   .ub-mentor-name-row { flex-wrap: wrap; gap: 4px; }
   .ub-campus-section { width: calc(100% - 20px); }
   .ub-campus-panel { padding-inline: 18px; }
@@ -560,6 +570,8 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .ub-college-names { min-width: 0; width: 100%; flex-wrap: wrap; justify-content: flex-start; padding-right: 0; animation: none; will-change: auto; }
+  .ub-college-names[aria-hidden='true'] { display: none; }
   .ub-scene-stage { transform: none; will-change: auto; }
   .ub-experiment [style*='opacity'] { opacity: 1 !important; transform: none !important; }
   .ub-experiment :is(.ub-mentor-grid, .ub-map-preview, .ub-story-preview, .ub-story-preview > img) { animation: none; }
