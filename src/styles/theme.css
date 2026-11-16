@@ -233,8 +233,8 @@ button:disabled { opacity: .55; }
   .campus-nav-actions { gap: 7px; }
   .theme-toggle { width: 33px; height: 33px; }
   .account-trigger > span:not(.student-avatar), .account-trigger > svg { display: none; }
-  .header-inbox { width: 32px; }
-  .account-menu { right: -44px; top: calc(100% + 18px); }
+  .header-inbox, .mobile-menu-trigger, .campus-mobile-menu { display: none; }
+  .account-menu { right: 0; top: calc(100% + 18px); }
   .campus-context { font-size: 8px; gap: 10px; padding-block: 19px 23px; }
   .campus-context > span { letter-spacing: .08em; gap: 6px; flex-shrink: 0; }
   .campus-context > a { font-size: 8px; max-width: 50%; line-height: 1.5; }

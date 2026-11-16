@@ -72,6 +72,19 @@ export const COLLEGES = [
     name: 'Plaksha University', lat: 30.6316513, lng: 76.7260704,
     osmUrl: 'https://www.openstreetmap.org/node/12752164667',
   },
+  {
+    name: 'Navrachana University', lat: 22.2926989, lng: 73.1218299,
+    aliases: [
+      'Navrachana University Vadodara',
+      'Navrachana University of Vadodara',
+      'Navrachna University',
+      'Navrachna University Vadodara',
+      'Navrachna University of Vadodara',
+      'NUV',
+      'NUV Vadodara',
+    ],
+    osmUrl: 'https://www.openstreetmap.org/way/678277833',
+  },
 ];
 
 export const DEFAULT_COLLEGE = COLLEGES[0];

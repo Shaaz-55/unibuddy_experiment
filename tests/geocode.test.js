@@ -33,6 +33,9 @@ test('profile college aliases, punctuation and spacing resolve locally', async c
     ['Symbiosis Institute of Technology', 'Symbiosis Pune'],
     ['DTU', 'Delhi Technological University'],
     ['  i.i.t.   delhi  ', 'IIT Delhi'],
+    ['Navrachana University of Vadodara', 'Navrachana University'],
+    ['  navrachna university, vadodara ', 'Navrachana University'],
+    ['NUV', 'Navrachana University'],
   ];
 
   for (const [enteredName, expectedCollege] of profileNames) {
@@ -49,4 +52,10 @@ test('Newton and Vedam use the selected Sonipat and Gurugram campuses', async ()
   assert.ok(newton.lat > 28.97 && newton.lat < 29.00 && newton.lng > 77.08 && newton.lng < 77.10);
   assert.ok(vedam.lat > 28.42 && vedam.lat < 28.44 && vedam.lng > 77.10 && vedam.lng < 77.12);
   assert.equal(getCollegeByName('An unlisted college'), undefined);
+});
+
+test('Navrachana University resolves to its Vadodara campus', async () => {
+  const nuv = await resolveCollegeLocation('Navrachana University');
+  assert.equal(nuv.isFallback, false);
+  assert.ok(nuv.lat > 22.28 && nuv.lat < 22.40 && nuv.lng > 73.08 && nuv.lng < 73.18);
 });

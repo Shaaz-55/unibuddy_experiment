@@ -59,7 +59,7 @@ The new app uses its own storage names:
 
 Uploaded photos/videos (up to 20 MB) are saved in IndexedDB and scoped to the selected college. Story likes and comments retain the original page’s in-memory behavior. Its share and more sheets also retain the original controls; report/mute feedback remains prototype behavior.
 
-The map uses the same 25-college coordinate catalog and OpenStreetMap tile service. Places, walking times, and reviews are sample data. Internet access is needed for map tiles, custom-college lookups, and the original Stories page’s sample media. Portraits, homepage photos, and Manrope are served locally.
+The map uses the same 26-college coordinate catalog and OpenStreetMap tile service. Places, walking times, and reviews are sample data. Internet access is needed for map tiles, custom-college lookups, and the original Stories page’s sample media. Portraits, homepage photos, and Manrope are served locally.
 
 ## Structure
 
