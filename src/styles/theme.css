@@ -116,10 +116,10 @@ button:disabled { opacity: .55; }
 .route-message .eyebrow { margin: 0; }
 
 .campus-brand { display: inline-flex; align-items: center; gap: 9px; font-size: 27px; font-weight: 650; line-height: 1; letter-spacing: -1.5px; flex-shrink: 0; }
-.campus-brand svg { width: 30px; height: 30px; }
+.campus-brand .brand-mark { width: 30px; height: 30px; flex-shrink: 0; object-fit: contain; }
 .brand-dot { color: #7c934d; }
 .campus-brand.is-small { font-size: 20px; gap: 7px; letter-spacing: -1px; }
-.campus-brand.is-small svg { width: 24px; height: 24px; }
+.campus-brand.is-small .brand-mark { width: 24px; height: 24px; }
 .campus-header { position: sticky; top: 0; z-index: 100; background: #faf9f5f2; backdrop-filter: blur(18px); border-bottom: 1px solid var(--line); }
 .campus-navigation { display: flex; align-items: center; gap: 34px; min-height: 86px; }
 .desktop-tabs { display: flex; align-items: center; gap: 4px; margin-inline: auto; }
@@ -229,7 +229,7 @@ button:disabled { opacity: .55; }
   .campus-app { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
   .campus-navigation { min-height: 68px; gap: 14px; }
   .campus-brand { font-size: 24px; }
-  .campus-brand svg { width: 27px; }
+  .campus-brand .brand-mark { width: 27px; height: 27px; }
   .campus-nav-actions { gap: 7px; }
   .theme-toggle { width: 33px; height: 33px; }
   .account-trigger > span:not(.student-avatar), .account-trigger > svg { display: none; }

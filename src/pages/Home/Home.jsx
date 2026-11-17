@@ -43,9 +43,7 @@ const MOMENTS = [
 function Brand({ compact = false }) {
   return (
     <a className={`ub-brand ${compact ? 'ub-brand-small' : ''}`} href="#ub-top" aria-label="UniBuddy, back to top">
-      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M5 7v12a7 7 0 0 0 14 0V7M13 7v12a7 7 0 0 0 14 0V7" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-      </svg>
+      <img className="brand-mark" src="/brand/unibuddy-logo.png" alt="" width="30" height="30" decoding="async" />
       <span>unibuddy<span className="ub-brand-dot">.</span></span>
     </a>
   );

@@ -80,7 +80,7 @@ body.ub-experiment-active {
 .ub-header { position: sticky; top: 0; z-index: 100; background: rgba(250, 249, 245, 0.94); border-bottom: 1px solid var(--ub-line); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
 .ub-nav { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .ub-brand { display: inline-flex; align-items: center; gap: 10px; font-size: 26px; font-weight: 800; letter-spacing: -1.3px; line-height: 1; flex-shrink: 0; }
-.ub-brand svg { width: 30px; height: 30px; }
+.ub-brand .brand-mark { width: 30px; height: 30px; flex-shrink: 0; object-fit: contain; }
 .ub-brand-dot { color: #6D8B47; }
 .ub-desktop-nav { display: flex; align-items: center; gap: 34px; padding-left: 36px; }
 .ub-desktop-nav a { font-size: 13px; font-weight: 600; position: relative; padding-block: 12px; }
@@ -281,7 +281,7 @@ body.ub-experiment-active {
 .ub-footer { padding-block: 43px 24px; }
 .ub-footer-top { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding-bottom: 35px; border-bottom: 1px solid var(--ub-line); }
 .ub-brand-small { font-size: 22px; }
-.ub-brand-small svg { width: 26px; height: 26px; }
+.ub-brand-small .brand-mark { width: 26px; height: 26px; }
 .ub-footer-top p { color: var(--ub-muted); font-size: 11px; margin: 0 auto 0 3px; }
 .ub-footer-top .ub-text-link { font-size: 10px; }
 .ub-footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 22px; padding-top: 22px; color: var(--ub-muted); font-size: 8px; }
@@ -424,7 +424,7 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
   .ub-container { width: calc(100% - 40px); }
   .ub-nav { min-height: 70px; gap: 12px; }
   .ub-brand { font-size: 23px; gap: 8px; }
-  .ub-brand svg { width: 27px; height: 27px; }
+  .ub-brand .brand-mark { width: 27px; height: 27px; }
   .ub-nav-actions { gap: 7px; }
   .ub-login-link { display: none; }
   .ub-nav-join { padding: 10px 14px; min-height: 40px; font-size: 10px; gap: 10px; }
@@ -546,7 +546,7 @@ body.ub-experiment-active .modal-backdrop { background: rgba(23, 43, 31, 0.65); 
 @media (max-width: 360px) {
   .ub-container { width: calc(100% - 32px); }
   .ub-brand { font-size: 21px; gap: 6px; }
-  .ub-brand > svg { width: 24px; }
+  .ub-brand > .brand-mark { width: 24px; height: 24px; }
   .ub-nav-actions { gap: 3px; }
   .ub-nav-join { padding-inline: 11px; gap: 6px; }
   .ub-hero h1 { font-size: 61px; letter-spacing: -4px; }
